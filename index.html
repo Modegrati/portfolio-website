@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Fauzil Adhim — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="h-8 w-8 rounded-xl bg-gradient-to-tr from-indigo-500 via-sky-500 to-cyan-400"></div>
+        <span class="font-extrabold tracking-tight">Fauzil.dev</span>
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#about" class="hover:text-indigo-600">About</a>
+        <a href="#projects" class="hover:text-indigo-600">Projects</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+      </nav>
+      <a href="https://github.com/Modegrati" target="_blank" class="text-sm px-3 py-1.5 rounded-xl bg-indigo-600 text-white hover:bg-indigo-500">GitHub</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="max-w-5xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Muhammad Fauzil Adhim</h1>
+      <p class="mt-4 text-lg text-slate-600">
+        Frontend Developer. I build fast, clean, and responsive web interfaces using <span class="font-semibold">JavaScript</span> and <span class="font-semibold">React</span>.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3 text-sm">
+        <span class="px-3 py-1 rounded-xl bg-slate-200">HTML</span>
+        <span class="px-3 py-1 rounded-xl bg-slate-200">CSS</span>
+        <span class="px-3 py-1 rounded-xl bg-slate-200">JavaScript</span>
+        <span class="px-3 py-1 rounded-xl bg-slate-200">React</span>
+      </div>
+      <div class="mt-8 flex gap-4">
+        <a href="#projects" class="px-5 py-2.5 rounded-xl bg-indigo-600 text-white hover:bg-indigo-500">View Projects</a>
+        <a href="#contact" class="px-5 py-2.5 rounded-xl border border-slate-300 hover:bg-slate-100">Contact</a>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="aspect-video rounded-2xl bg-gradient-to-br from-indigo-500/20 via-sky-400/20 to-cyan-300/20 border border-slate-200"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="max-w-5xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8">
+    <div class="md:col-span-2">
+      <h2 class="text-2xl font-bold">About</h2>
+      <p class="mt-3 text-slate-600">Self‑taught Frontend Developer based in Mamuju, Indonesia. Focused on clean UI, readable code, and quick iteration. Open to remote roles.</p>
+    </div>
+    <div class="bg-white border border-slate-200 rounded-2xl p-4">
+      <h3 class="font-semibold">Quick Facts</h3>
+      <ul class="mt-2 space-y-2 text-sm">
+        <li>Remote friendly</li>
+        <li>Timezone: WITA (UTC+8)</li>
+        <li>English: Intermediate</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="max-w-5xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold">Projects</h2>
+    <div class="mt-6 grid sm:grid-cols-2 gap-6">
+      <article class="group bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
+        <div class="h-36 bg-gradient-to-tr from-indigo-500/20 to-cyan-400/20"></div>
+        <div class="p-4">
+          <h3 class="font-semibold">Weather App</h3>
+          <p class="text-sm text-slate-600 mt-1">City search with OpenWeather API. Built with React.</p>
+          <div class="mt-3 flex gap-3 text-sm">
+            <a class="text-indigo-600 hover:underline" href="#" target="_blank">Live</a>
+            <a class="text-slate-600 hover:underline" href="#" target="_blank">Code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="group bg-white border border-slate-200 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow">
+        <div class="h-36 bg-gradient-to-tr from-indigo-500/20 to-cyan-400/20"></div>
+        <div class="p-4">
+          <h3 class="font-semibold">Personal Portfolio</h3>
+          <p class="text-sm text-slate-600 mt-1">Static site with clean design and sections for About, Projects, Contact.</p>
+          <div class="mt-3 flex gap-3 text-sm">
+            <a class="text-indigo-600 hover:underline" href="#" target="_blank">Live</a>
+            <a class="text-slate-600 hover:underline" href="https://github.com/Modegrati/portfolio-website-modern" target="_blank">Code</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-5xl mx-auto px-4 py-16">
+    <div class="rounded-2xl p-6 border border-slate-200 bg-white">
+      <h2 class="text-2xl font-bold">Contact</h2>
+      <p class="mt-2 text-slate-600">Email: <a class="text-indigo-600" href="mailto:modegratis0987654321@gmail.com">modegratis0987654321@gmail.com</a></p>
+      <p class="mt-1 text-slate-600">GitHub: <a class="text-indigo-600" target="_blank" href="https://github.com/Modegrati">github.com/Modegrati</a></p>
+    </div>
+  </section>
+
+  <footer class="py-10 text-center text-sm text-slate-500">
+    © 2025 Muhammad Fauzil Adhim
+  </footer>
+</body>
+</html>
